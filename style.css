@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html, body { height: 100%; }
+* { margin: 0px; padding: 0px; }
+li { list-style: none; }
+a { text-decoration: none; }
+body { position: relative; font-family: Montserrat, sans-serif; background: linear-gradient(90deg, rgb(213, 98, 139) 0%, rgb(235, 146, 92) 35%, rgb(97, 171, 168) 71%, rgb(58, 170, 221) 100%); font-size: 15px; }
+a, button, input, select { font-family: Montserrat, sans-serif; }
+*, ::after, ::before { box-sizing: border-box; }
+button { outline: none; background: transparent; border: none; cursor: pointer; }
+input { outline: none; background: transparent; border: none; }
+
+.tt { font-family: Asap, sans-serif; }
+.game__info {padding: 15px 30px;font-size: 35px;/* background: rgb(184, 159, 85); */margin: 0px auto 30px;position: relative;display: flex;align-items: center;}
+.game__title {font-size: 48px;font-weight: 900;text-shadow: white -1px 0px, white 0px 1px, white 1px 0px, white 0px -1px;padding-right: 30px;}
+.game__title span {font-size: 36px;font-weight: 700;text-shadow: black -1px 0px, black 0px 1px, black 1px 0px, black 0px -1px;color: rgb(255, 255, 255);}
+.game__info .btn {width: 70px;height: 70px;margin:0 10px;background: rgb(229 39 39);color: rgb(255, 255, 255);font-size: 30px;border-radius: 100%;}
+.hide {display:none;}
+.timer {color: rgb(255 255 255);font-weight: 500;display: inline-block;text-align: center;font-size: 35px;width: 150px;padding: 5px 0;margin: 0 30px;background: rgb(255 255 255);color: #000;/* border-radius: 3px; */border: 2px solid rgb(0 0 0);font-weight: 800;letter-spacing: 3px;}
+.counter {font-size: 40px;font-weight: 900;text-shadow: white -1px 0px, white 0px 1px, white 1px 0px, white 0px -1px;color: rgb(0,0,0);}
+
+.game__popup { text-align: center; background: rgb(184, 159, 85); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 820px; min-width: 50%; padding: 100px 50px; }
+.dim {background:rgba(0,0,0,0.3);}
+
+.popup__top1 { background: url("./img/top_bg1.png") left top repeat; width: 100%; height: 20px; position: absolute; top: -19px; left: 0px; }
+.popup__top2 {background: url("./img/top_bg2.png") left top repeat;width: 100%;height: 30px;position: absolute;top: 15px;left: 0px;}
+.popup__bottom1 { background: url("./img/top_bg1.png") left top repeat; width: 100%; height: 20px; position: absolute; bottom: -20px; left: 0px; transform: rotate(180deg); }
+.popup__bottom2 { background: url("./img/top_bg2.png") left top repeat; width: 100%; height: 30px; position: absolute; bottom: 15px; left: 0px; }
+.game__popup .title { font-size: 140px; font-weight: 900; position: relative; display: inline-block; z-index: 1; text-shadow: white -3px 0px, white 0px 3px, white 3px 0px, white 0px -3px; }
+.game__popup .text { font-size: 40px; font-weight: 700; color: rgb(255, 255, 255); text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px; }
+.game__popup .btn { width: 350px; padding: 15px; font-weight: 700; font-size: 35px; margin-top: 50px; color: rgb(255, 255, 255); position: relative; background: rgb(229, 39, 39); overflow: hidden; transition: all 0.3s ease 0s; }
+.game__popup .btn:hover { background: transparent; }
+.game__popup .btn span { position: relative; z-index: 1; }
+.game__popup .btn::after { display: block; content: ""; position: absolute; top: -100%; left: -50%; width: 100%; height: 100%; transition: all 0.3s ease 0s; }
+.game__popup .btn:hover::after { top: 0px; left: 0px; background: linear-gradient(90deg, rgb(213, 98, 139) 0%, rgb(235, 146, 92) 35%, rgb(97, 171, 168) 71%, rgb(58, 170, 221) 100%); }
+
+.game__zone {width:100%;height: calc(100% - 130px);}
+.game__zone .playground {position:relative; width:100%; height:100%;overflow:hidden;}
+.game__zone .playground .jelly {position:absolute;cursor:pointer;transition:all 0.2s;}
+.game__zone .playground .jelly:hover {transform:scale(1.05);}
